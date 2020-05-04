@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Interest</title>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="home.html">
+                  <img class="rounded-circle" src="../resources/img/cu_boulder_logo.jpg" alt="" width="30" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="mypage_boostrap.html">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="signup-modal/login.html">Sign Up Modal <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe game</a>
+                    </li>
+                  </ul>
+                  <div class="form-inline my-2 my-lg-0">
+                      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+                  </div>
+                </div>
+              </nav>
+            <h1>Add New Interest</h1>
+            <form>
+                <div class = "form-group">
+                    <label for = "interestName">Interest Name</label>
+                    <input type = "text" class = "form-control" placeholder = "Name" id = "interestName">
+                </div>
+                <div class = "form-group">
+                    <label for = "desc">Text About Interest</label>
+                    <textarea class = "form-control" id = "desc" rows = "3"></textarea>
+                </div>
+                <div class = "form-row">
+                    <div class = "form-group col-6">
+                        <p>Upload Local Image:</p>
+                        <input type="file" id="myFile" name="filename">
+                    </div>
+                    <div class = "form-group col-6">
+                        <p>Select # of Tweets to Display:</p>
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class = "form-row">
+                    <div class = "form-group col-6">
+                        <p>On a scale of 1-5, how interested in this are you?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                        </div>  
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">4</label>
+                        </div>  
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox5">5</label>
+                        </div>  
+                    </div>
+                </div>
+                <label for = "username">Login to Finish Submitting</label>
+                <div class = "form-row">
+                    <div class = "form-group col-6">
+                        <input type = "text" class = "form-control" placeholder = "Username" id = "username">
+                    </div>
+                    <div class = "form-group col-6">
+
+                        <input type = "password" class = "form-control" placeholder = "Password" id = "username">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
